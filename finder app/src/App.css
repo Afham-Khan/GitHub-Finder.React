@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Lighter background for contrast */
+  transition: background-color 0.3s;
+}
+
+/* Navbar Styles */
+nav {
+  background-color:darkcyan; /* Darker navbar */
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; /* More padding */
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav:hover {
+  background-color: #2a3649; /* Slightly lighter on hover */
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+nav h1:hover {
+  transform: scale(1.05); /* Subtle grow on hover */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px; /* Increased margin */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b0c4de; /* Light color for links */
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  color: #50b3e2;
+  text-shadow: 0 0 10px #50b3e2, 0 0 20px #50b3e2; /* Glow effect */
+}
+
+/* Search Section */
+.search-section {
+  margin: 40px auto; /* Increased margin */
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.search-section button {
+  background-color: #4caf50; /* Green button */
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px; /* Increased padding */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-section button:hover {
+  background-color: #8e3871; /* Darker green */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* User List */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  height: 60vh;
+}
+
+.user-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+  height: 120px; /* Slightly taller */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-10px); /* Stronger lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px; /* Fixed size for images */
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.user-card img:hover {
+  transform: scale(1.1); /* Image grow effect */
+}
+
+.user-card h3 {
+  margin: 0;
+  color: #333; /* Darker text color */
+}
+
+.user-card a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #50b3e2;
+  transition: color 0.3s;
+}
+
+.user-card a:hover {
+  text-decoration: underline;
+  color: #333; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #1d2635; /* Darker footer */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  color: white;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+footer:hover {
+  background-color:cornflowerblue; /* Slightly lighter on hover */
+}
